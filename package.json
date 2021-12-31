@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xzela/shoppr/issues"
   },
-  "homepage": "https://github.com/xzela/shoppr#readme"
+  "homepage": "https://github.com/xzela/shoppr#readme",
+  "devDependencies": {
+    "eslint-config-azido": "1.0.x"
+  }
 }
