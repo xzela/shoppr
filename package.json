@@ -7,7 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "dev": "npx next ./src",
+    "test": "echo \"lol, wut?\"",
+    "lint": "npx eslint "
   },
   "contributors": [
     {
