@@ -7,7 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "dev": "npx next dev",
+    "test": "echo \"lol, wut?\"",
+    "lint": "npx eslint "
   },
   "contributors": [
     {
@@ -27,6 +29,21 @@
   },
   "homepage": "https://github.com/xzela/shoppr#readme",
   "devDependencies": {
-    "eslint-config-azido": "1.0.x"
+    "@babel/core": "^7.16.10",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "next": "^12.0.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
