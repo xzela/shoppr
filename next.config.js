@@ -1,8 +1,3 @@
-const nextConfig = {
-	"compilerOptions": {
-		"baseUrl": "./src"
-	},
-	dir: './src'
+module.exports = {
+   /* config options here */
 }
-
-module.exports = nextConfig
