@@ -7,10 +7,9 @@ export default function Home () {
         <title>Shoppr</title>
         <link rel='icon' href='/favicon.ico' />
       </Header>
-
       <main>
-		  <p>Word</p>
-		  </main>
+        <p>Word</p>
+      </main>
     </div>
   )
 }
