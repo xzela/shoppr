@@ -1,15 +1,39 @@
-import Header from '../components/header'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Form from 'react-bootstrap/Form'
+import Layout from '../components/layout'
 
-export default function Home () {
+export default function Home ( { items }) {
+  console.log(items)
   return (
-    <div className='container'>
-      <Header>
-        <title>Shoppr</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Header>
-      <main>
-        <p>Word</p>
-      </main>
-    </div>
+    <Layout home>
+      <ListGroup>
+        {items.map(item => (
+          <ListGroup.Item key={item.id}>
+            <Form.Check type='checkbox' label={item.label} id={item.id} />
+          </ListGroup.Item>
+        ))}
+      </ListGroup>
+    </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {
+         items: [
+        {
+          id: 'apples',
+          label: 'Apples'
+        },
+        {
+          id: 'bananas',
+          label: 'Bananas'
+        },
+        {
+          id: 'lettuce',
+          label: 'Lettuce'
+        },
+      ]
+    }
+  }
 }
